@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Service - Sanjay Electronics</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container header-container">
+
+            <div class="logo">
+                Sanjay <span>Electronics</span>
+            </div>
+
+            <nav>
+
+                <ul id="nav-menu">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+    <li><a href="login.html">Book Service</a></li>
+    <li><a href="admin.html">Admin Panel</a></li>
+
+</ul>
+
+            </nav>
+
+            <div class="mobile-menu" id="mobile-menu">
+                ☰
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BOOKING SECTION -->
+
+    <section class="booking">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Book Your Service</h2>
+
+                <p>
+                    Schedule your TV Repair or Dish Setup service easily.
+                </p>
+
+            </div>
+
+            <div class="booking-form">
+
+                <form id="booking-form"
+                    action="/book-service"
+                    method="POST">
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input type="text"
+                            name="fullname"
+                            class="form-control"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label>Phone Number</label>
+
+                        <input type="tel"
+                            name="phone"
+                            class="form-control"
+                            placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group">
+
+                        <label>Address</label>
+
+                        <textarea name="address"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Enter your address"
+                            required></textarea>
+
+                    </div>
+<!-- VILLAGE -->
+
+<div class="form-group">
+
+    <label>Select Village</label>
+
+    <select name="village"
+        class="form-control"
+        required>
+
+        <option value="">
+            Choose Village
+        </option>
+
+        <option value="Dahivel">
+            Dahivel
+        </option>
+
+        <option value="Bodgaon">
+            Bodgaon
+        </option>
+
+        <option value="Kaldar">
+            Kaldar
+        </option>
+
+        <option value="Bhongaon">
+            Bhongaon
+        </option>
+
+        <option value="Kirwade">
+            Kirwade
+        </option>
+
+        <option value="Surpan">
+            Surpan
+        </option>
+
+        <option value="Chichpada">
+            Chichpada
+        </option>
+
+        <option value="Maindane">
+            Maindane
+        </option>
+
+        <option value="Other">
+            Other
+        </option>
+
+    </select>
+
+</div>
+                    <!-- SERVICE -->
+
+                    <div class="form-group">
+
+                        <label>Select Service</label>
+
+                        <select name="service"
+                            class="form-control"
+                            required>
+
+                            <option value="">
+                                Choose Service
+                            </option>
+
+                            <option value="TV Repair">
+                                TV Repair
+                            </option>
+
+                            <option value="Dish Setup">
+                                Dish Setup
+                            </option>
+
+                            <option value="Both Services">
+                                Both Services
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label>Preferred Date</label>
+
+                        <input type="date"
+                            name="date"
+                            id="date"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                    <!-- TIME -->
+
+                    <div class="form-group">
+
+                        <label>Preferred Time</label>
+
+                        <select name="time"
+                            class="form-control"
+                            required>
+
+                            <option value="">
+                                Select Time Slot
+                            </option>
+
+                            <option value="Morning">
+                                Morning (9 AM - 12 PM)
+                            </option>
+
+                            <option value="Afternoon">
+                                Afternoon (12 PM - 4 PM)
+                            </option>
+
+                            <option value="Evening">
+                                Evening (4 PM - 7 PM)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- BUTTON -->
+
+                    <button type="submit"
+                        class="btn"
+                        style="width:100%;">
+
+                        Book Service
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-column">
+
+                    <h3>Sanjay Electronics</h3>
+
+                    <p>
+                        Professional TV repair and Dish setup services.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="about.html">About</a>
+
+                    <a href="contact.html">Contact</a>
+
+                    <a href="login.html">Book Service</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Services</h3>
+
+                    <p>TV Repair</p>
+
+                    <p>Dish Setup</p>
+
+                    <p>Both Services</p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Contact</h3>
+
+                    <p>📞 +91 9307828962</p>
+
+                    <p>📍 Dahivel, Dhule</p>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 Sanjay Electronics. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
